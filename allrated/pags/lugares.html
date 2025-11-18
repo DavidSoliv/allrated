@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllRated - Avaliações de Lugares</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../img/AllRated_Logo.png " alt="AllRated">
+                    <span class="logo-text">AllRated</span>
+                </div>
+                <!-- Links -->
+                <nav class="nav">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        Popular
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        Mais Avaliados
+                    </a>
+                    <a href="filmes.html" class="nav-link">Filmes</a>
+                    <a href="series.html" class="nav-link">Séries</a>
+                    <a href="jogos.html" class="nav-link">Jogos</a>
+                    <a href="#" class="nav-link">Livros</a>
+                    <a href="lugares.html" class="nav-link">Lugares</a>
+                </nav>
+                <!-- Pesquisa -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Buscar filmes, séries, livros, lugares...">
+                    </div>
+                </div>
+                <!-- Usuário -->
+                <button class="user-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Conteúdo -->
+    <main class="main">
+        <div class="container">
+            <!-- Banner 1 -->
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="../../img/baco.jpg" alt="Caso Baco" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../../img/user_rafa.jpg" alt="Pessoa 1">
+                                <div>
+                                    <h3 class="reviewer-name">Rafael Azevedo</h3>
+                                    <p class="reviewer-score">Avaliação: 95%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title"> Casa Baco </h1>
+                            <p class="hero-description">"Ambiente acolhedor e atendimento muito atencioso. Os pratos são bem preparados e têm ótima apresentação. Só deixou a desejar em alguns detalhes de sabor, mas ainda assim vale a visita. Recomendo!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 2 -->
+                <div class="hero-slide">
+                    <img src="../../img/alterdochao.jpg" alt="Alter do Chão" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../../img/user_maria.jpg" alt="Pessoa 2">
+                                <div>
+                                    <h3 class="reviewer-name">Maria do Carmo</h3>
+                                    <p class="reviewer-score">Avaliação: 100%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title"> Alter do Chão </h1>
+                            <p class="hero-description">"Simplesmente incrível! As praias de água doce e areia branca são deslumbrantes, e o clima tranquilo torna a experiência ainda melhor. Passeios de barco, pôr do sol inesquecível e natureza exuberante. Um destino imperdível — voltarei com certeza!"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Banner 3 -->
+                <div class="hero-slide">
+                    <img src="../../img/hopihari.webp" alt="Hopi Hari" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../../img/user_ricardo.jpg" alt="Pessoa 3">
+                                <div>
+                                    <h3 class="reviewer-name">Ricardo Martinez</h3>
+                                    <p class="reviewer-score">Avaliação: 91%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title"> Hopi Hari </h1>
+                            <p class="hero-description">"Parque temático muito divertido, com atrações variadas e ambiente bem temático. Algumas filas podem ser longas e alguns brinquedos ficam indisponíveis às vezes, mas a experiência geral vale muito a pena. Ótimo para passar o dia com amigos ou família!"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+            <section class="section">
+                <h2 class="section-title">Lugares em Alta</h2>
+                <div class="cards-grid">
+                    <!-- Card 1 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/lebistrot.jpg" alt="Bistrô Le Gourmet" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>9.2</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Bistrô Le Gourmet</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Jardins, São Paulo
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Restaurante</span>
+                                <span class="badge">Francesa</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">3.450 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/grandmercure.jpg" alt="Grand Mercure Rio de Janeiro Copacabana" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>8.9</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Grand Mercure Rio de Janeiro Copacabana</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Copacabana, Rio de Janeiro
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Hotel</span>
+                                <span class="badge">Luxo</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">5.620 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/cafeecamera.jpg" alt="Café & Câmera" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>8.7</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Café & Câmera</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Santo Antônio Além do Carmo, Salvador
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Cafeteria</span>
+                                <span class="badge">Lazer</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">2.340 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/nannai.webp" alt="Nannai Muro Alto" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>9.0</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Nannai Muro Alto</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Ipojuca, Porto de Galinhas
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Resort</span>
+                                <span class="badge">Spa</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">4.890 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/mam.jpg" alt="museu da arte moderna" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>8.8</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Museu da Arte Moderna</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Ibirapuera, São Paulo
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Museu</span>
+                                <span class="badge">Atração</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">6.780 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/lagonegro.jpg" alt="Lago Negro" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor"
+                                    stroke="currentColor" stroke-width="2">
+                                    <polygon
+                                        points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                    </polygon>
+                                </svg>
+                                <span>8.6</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Lago Negro</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Gramado, Rio Grande do Sul
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Lazer</span>
+                                <span class="badge">Passeio</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 100%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="star-container">
+                                        <svg class="star-bg" viewBox="0 0 24 24" fill="currentColor">
+                                            <polygon
+                                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                            </polygon>
+                                        </svg>
+                                        <div class="star-fill" style="width: 30%;">
+                                            <svg class="star-fg" viewBox="0 0 24 24" fill="currentColor">
+                                                <polygon
+                                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                                                </polygon>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="votes-count">2.890 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Mais Avaliações</h2>
+                <div class="cards-grid">
+                    <!-- Card 7 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/CataratasdoIguacu.jpeg" alt="Cataratas do Iguaçu" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>9.1</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Cataratas do Iguaçu</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Foz do Iguaçu, Paraná
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Ponto Turistico</span>
+                                <span class="badge">Internacional</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">1.230 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/zagaia.jpg" alt="Zagaia Eco Resort" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>8.8</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Zagaia Eco Resort</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Bonito, Mato Grosso do Sul
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Lazer</span>
+                                <span class="badge">Resort</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">2.540 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/belleduvalais.jpg" alt="Belle du Valais" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>9.0</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Belle du Valais</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Centro Gramado, Rio Grande do Sul
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Restaurante</span>
+                                <span class="badge">Luxo</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">1.110 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 10 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/cristo.webp" alt="Cristo Redentor" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>8.9</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Cristo Redentor</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Rio de Janeiro, Brasil
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Ponto Turistico</span>
+                                <span class="badge">Cultura</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">3.210 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 11 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/FeraPalaceHotel.webp" alt="Fera Palace Hotel" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>9.2</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Fera Palace Hotel</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Salvador, Bahia
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Hotel</span>
+                                <span class="badge">Lazer</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">980 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 12 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../../img/TeatroAmazonas.jpg" alt="Teatro Amazonas" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>9.3</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Teatro Amazonas</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Manaus, Amazonas
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Culutra</span>
+                                <span class="badge">Atração</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">1.430 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 13 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../img/churrascaria-garfo-e-bombacha-canela-rs.jpg" alt="Churrascaria Garfo & Bombacha" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>9.4</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Churrascaria Garfo & Bombacha</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Canela, Rio Grande do Sul
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Restaurante</span>
+                                <span class="badge">Lazer</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">2.670 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 14 -->
+                    <div class="card">
+                        <div class="card-image-wrapper">
+                            <img src="../img/Entrada-Pousada-do-Mondego.jpg" alt="Pousada do Mondego" class="card-image">
+                            <div class="card-rating-badge">
+                                <svg class="star-icon-badge" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                                </svg>
+                                <span>8.7</span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h3 class="card-title">Pousada do Mondego</h3>
+                            <p class="card-location">
+                                <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                Ouro Preto, Minas Gerais
+                            </p>
+                            <div class="card-badges">
+                                <span class="badge">Lazer</span>
+                                <span class="badge">Pousada</span>
+                            </div>
+                            <div class="card-stars">
+                                <div class="stars">
+                                    <!-- stars code igual aos anteriores -->
+                                </div>
+                                <p class="votes-count">3.120 avaliações</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+                
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

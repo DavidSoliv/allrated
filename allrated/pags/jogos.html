@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllRated - Avaliações de Filmes, Séries, Livros e Lugares</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../img/AllRated_Logo.png   " alt="AllRated">
+                    <span class="logo-text">AllRated</span>
+                </div>
+
+                <!-- Links -->
+                <nav class="nav">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        Popular
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        Mais Avaliados
+                    </a>
+                    <a href="filmes.html" class="nav-link">Filmes</a>
+                    <a href="series.html" class="nav-link">Séries</a>
+                    <a href="jogos.html" class="nav-link">Jogos</a>
+                    <a href="#" class="nav-link">Livros</a>
+                    <a href="lugares.html" class="nav-link">Lugares</a>
+                </nav>
+
+                <!-- Pesquisa -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Buscar filmes, séries, livros, lugares...">
+                    </div>
+                </div>
+
+                <!-- Usuário -->
+                <button class="user-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Banner -->
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="../img/amnesia.png" alt="Breaking Bad" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/user.png" alt="Pessoa 1">
+                                <div>
+                                    <h3 class="reviewer-name">Ryan Carvalho</h3>
+                                    <p class="reviewer-score">Avaliação: 90%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Amnesia: The Bunker</h1>
+                            <p class="hero-description">Uma literal experiência de presa e predador.</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="../img/Sekiro.jpg" alt="Stranger Things" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/user.png" alt="Pessoa 2">
+                                <div>
+                                    <h3 class="reviewer-name">David Salim</h3>
+                                    <p class="reviewer-score">Avaliação: 100%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Sekiro: Shadows Die Twice</h1>
+                            <p class="hero-description">Hesitação é morte...</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="../img/dead_cells.jpg" alt="Game of Thrones" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/Felix.png" alt="Pessoa 3">
+                                <div>
+                                    <h3 class="reviewer-name">Félix Almeida</h3>
+                                    <p class="reviewer-score">Avaliação: 85%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Dead Cells</h1>
+                            <p class="hero-description">Masmorras, roguelike e muita ação.</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Jogos Destaque -->
+            <section class="section">
+                <h2 class="section-title">Jogos em destaque</h2>
+
+
+                <div class="cards-grid">
+
+
+                    <!-- CARD 1 -->
+                    <div class="series-rating-card">
+                        <img src="../img/amnesia.png" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Amnesia: The Bunker</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Terror</span>
+                                <span>Suspense</span>
+                                <span>Horror Psicológico</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>84   %</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★☆ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">214.589 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="series-rating-card">
+                        <img src="../img/silksong.webp" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Hollow Knight: Silksong</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Metroidvania</span>
+                                <span>Aventura</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>94%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">120.000 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="series-rating-card">
+                        <img src="../img/dead_cells.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Dead Cells</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Roguelike</span>
+                                <span>Ação</span>
+                                <span>Plataforma</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>89%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★☆ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">658.441 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="series-rating-card">
+                        <img src="../img/Sekiro.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Sekiro: Shadows Die Twice</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Soulslike</span>
+                                <span>Aventura</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>91%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.102.774 avaliações</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+             <!-- Jogos Atemporais -->
+            <section class="section">
+                <h2 class="section-title">Obras primas atemporais</h2>
+
+
+                <div class="cards-grid">
+
+
+                    <!-- CARD 5 -->
+                    <div class="series-rating-card">
+                        <img src="../img/zelda.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">The Legend of Zelda: Ocarina of Time</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Aventura</span>
+                                <span>Sitcom</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>99%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.845.120 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 6 -->
+                    <div class="series-rating-card">
+                        <img src="../img/half_life_3.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Half-Life 3</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>FPS</span>
+                                <span>Ficção Científica</span>
+                                <span>Ação</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>96%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.102.300 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 7 -->
+                    <div class="series-rating-card">
+                        <img src="../img/Red_Dead_Redemption.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Red Dead Redemption</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Faroeste</span>
+                                <span>Aventura</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>95%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.457.322 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 8 -->
+                    <div class="series-rating-card">
+                        <img src="../img/shadow_of_the_colossus.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Shadow of The Colossus</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Aventura</span>
+                                <span>Fantasia</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>96%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.245.300 avaliações</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+    </main>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

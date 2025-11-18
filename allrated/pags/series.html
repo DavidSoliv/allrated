@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AllRated - Avaliações de Filmes, Séries, Livros e Lugares</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <img src="../img/AllRated_Logo.png   " alt="AllRated">
+                    <span class="logo-text">AllRated</span>
+                </div>
+
+                <!-- Links -->
+                <nav class="nav">
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                        Popular
+                    </a>
+                    <a href="#" class="nav-link">
+                        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+                            </polygon>
+                        </svg>
+                        Mais Avaliados
+                    </a>
+                    <a href="filmes.html" class="nav-link">Filmes</a>
+                    <a href="series.html" class="nav-link">Séries</a>
+                    <a href="jogos.html" class="nav-link">Jogos</a>
+                    <a href="#" class="nav-link">Livros</a>
+                    <a href="lugares.html" class="nav-link">Lugares</a>
+                </nav>
+
+                <!-- Pesquisa -->
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                        <input type="text" class="search-input" placeholder="Buscar filmes, séries, livros, lugares...">
+                    </div>
+                </div>
+
+                <!-- Usuário -->
+                <button class="user-button">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="main">
+        <div class="container">
+            <!-- Hero Banner -->
+            <div class="hero-slider">
+                <div class="hero-slide active">
+                    <img src="../img/breaking.jpg" alt="Breaking Bad" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/user_rafael.png" alt="Pessoa 1">
+                                <div>
+                                    <h3 class="reviewer-name">Rafael Azevedo</h3>
+                                    <p class="reviewer-score">Avaliação: 95%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Breaking Bad</h1>
+                            <p class="hero-description">Um clássico moderno sobre moralidade, poder e química.</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="../img/stranger.jpg" alt="Stranger Things" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/user.png" alt="Pessoa 2">
+                                <div>
+                                    <h3 class="reviewer-name">Emanuella Maria</h3>
+                                    <p class="reviewer-score">Avaliação: 100%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Stranger Things</h1>
+                            <p class="hero-description">Uma mistura nostálgica de ficção científica e amizade.</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-slide">
+                    <img src="../img/gameofthrones.jpg" alt="Game of Thrones" class="hero-image">
+                    <div class="hero-overlay">
+                        <div class="hero-content">
+                            <div class="reviewer">
+                                <img src="../img/user_ricardo.png" alt="Pessoa 3">
+                                <div>
+                                    <h3 class="reviewer-name">Ricardo Martinez</h3>
+                                    <p class="reviewer-score">Avaliação: 91%</p>
+                                </div>
+                            </div>
+                            <h1 class="hero-title">Game of Thrones</h1>
+                            <p class="hero-description">Tronos, dragões e traições em Westeros.</p>
+
+                            <button class="hero-more-btn">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Séries Destaque -->
+            <section class="section">
+                <h2 class="section-title">Séries em destaque</h2>
+
+
+                <div class="cards-grid">
+
+
+                    <!-- CARD 1 -->
+                    <div class="series-rating-card">
+                        <img src="../img/breaking.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Breaking Bad</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Drama</span>
+                                <span>Crime</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>95%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.245.300 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 2 -->
+                    <div class="series-rating-card">
+                        <img src="../img/stranger.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Stranger Things</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ficção</span>
+                                <span>Aventura</span>
+                                <span>Terror</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>88%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★☆ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">965.122 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 3 -->
+                    <div class="series-rating-card">
+                        <img src="../img/gameofthrones.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Game of Thrones</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Fantasia</span>
+                                <span>Ação</span>
+                                <span>Drama</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>91%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★☆ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">2.540.900 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 4 -->
+                    <div class="series-rating-card">
+                        <img src="../img/the_walking_dead.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">The Walking Dead</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Ação</span>
+                                <span>Terror</span>
+                                <span>Suspense</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>95%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.245.300 avaliações</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+             <!-- Séries Destaque -->
+            <section class="section">
+                <h2 class="section-title">As pérolas da comédia</h2>
+
+
+                <div class="cards-grid">
+
+
+                    <!-- CARD 5 -->
+                    <div class="series-rating-card">
+                        <img src="../img/brooklyn_99.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Brooklyn Nine-Nine</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Comédia</span>
+                                <span>Policial</span>
+                                <span>Sitcom</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>89%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">984.512 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 6 -->
+                    <div class="series-rating-card">
+                        <img src="../img/the_office.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">The Office</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Comédia</span>
+                                <span>Mockumentary</span>
+                                <span>Sitcom</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>92%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.563.204 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 7 -->
+                    <div class="series-rating-card">
+                        <img src="../img/Jane_virgin.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Jane The Virgin</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Comédia</span>
+                                <span>Romance</span>
+                                <span>Drama</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>86%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★☆ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">521.780 avaliações</p>
+                        </div>
+                    </div>
+
+
+                    <!-- CARD 8 -->
+                    <div class="series-rating-card">
+                        <img src="../img/everybody_hates_chris.jpg" class="series-card-image" />
+                        <div class="series-card-content">
+                            <h2 class="series-card-title">Everybody Hates Chris</h2>
+
+
+                            <div class="series-card-tags">
+                                <span>Comédia</span>
+                                <span>Sitcom</span>
+                                <span>Família</span>
+                            </div>
+
+
+                            <div class="series-card-ratings">
+                                <div class="critic-rating"><span class="custom-icon"></span> <span>90%</span> <small>Crítica</small></div>
+                                <div class="user-rating">★★★★★ <small>Público</small></div>
+                            </div>
+
+
+                            <p class="series-card-total">1.245.300 avaliações</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+    </main>
+
+
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
